@@ -4,7 +4,7 @@ var Sentiment = require("sentiment");
 var fs = require("fs");
 var diccionarioEspaniol = require("natural/lib/natural/sentiment/Spanish/afinnShortSortedSpanish.json");
 //Leyendo un documento de texto plano para ser analizado.
-var texto = fs.createReadStream(__dirname + "/texto2.txt");
+var texto = fs.createReadStream(__dirname + "/texto1.txt");
 texto.setEncoding("utf-8");
 //Iniciando el cliente tipo Sentiment de natural.
 var sentimentClient = new Sentiment({
